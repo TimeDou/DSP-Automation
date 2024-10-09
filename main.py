@@ -1,5 +1,5 @@
 import dspAutomation
-from pulp import LpProblem, LpMinimize, LpVariable, lpSum, LpStatus, value
+from pulp import LpProblem, LpMinimize, LpVariable, lpSum, LpStatus, value, PULP_CBC_CMD
 
 
 recipes = dspAutomation.getRecipes('recipes.json')
@@ -72,6 +72,7 @@ for i in range(ROWS):
                         model += z[i][j][k][l][a][b] <= x[k][l][b]
                         model += z[i][j][k][l][a][b] >= x[i][j][a] + x[k][l][b] - 1
 
+solver = PULP_CBC_CMD(threads=4)
 # Solve the problem
 model.solve()
 
