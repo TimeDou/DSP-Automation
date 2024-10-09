@@ -1,0 +1,974 @@
+{
+  "recipes": [
+    {
+      "id": "tesla-tower",
+      "name": "Tesla Tower",
+      "in": {
+        "iron-ingot": 2,
+        "magnetic-coil": 1
+      },
+      "out": {
+        "tesla-tower": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "wireless-power-tower",
+      "name": "Wireless Power Tower",
+      "in": {
+        "plasma-exciter": 3,
+        "tesla-tower": 1
+      },
+      "out": {
+        "wireless-power-tower": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "satellite-substation",
+      "name": "Satellite Substation",
+      "in": {
+        "frame-material": 2,
+        "super-magnetic-ring": 10,
+        "wireless-power-tower": 1
+      },
+      "out": {
+        "satellite-substation": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "wind-turbine",
+      "name": "Wind Turbine",
+      "in": {
+        "gear": 1,
+        "iron-ingot": 6,
+        "magnetic-coil": 3
+      },
+      "out": {
+        "wind-turbine": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "thermal-power-plant",
+      "name": "Thermal Power Plant",
+      "in": {
+        "gear": 4,
+        "iron-ingot": 10,
+        "magnetic-coil": 4,
+        "stone-brick": 4
+      },
+      "out": {
+        "thermal-power-plant": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "solar-panel",
+      "name": "Solar Panel",
+      "in": {
+        "circuit-board": 5,
+        "copper-ingot": 10,
+        "high-purity-silicon": 10
+      },
+      "out": {
+        "solar-panel": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "accumulator",
+      "name": "Accumulator",
+      "in": {
+        "crystal-silicon": 3,
+        "iron-ingot": 6,
+        "super-magnetic-ring": 1
+      },
+      "out": {
+        "accumulator": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "geothermal-power-station",
+      "name": "Geothermal Power Station",
+      "in": {
+        "copper-ingot": 20,
+        "photon-combiner": 4,
+        "steel": 15,
+        "super-magnetic-ring": 1
+      },
+      "out": {
+        "geothermal-power-station": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "mini-fusion-power-plant",
+      "name": "Mini Fusion Power Plant",
+      "in": {
+        "carbon-nanotube": 8,
+        "processor": 4,
+        "super-magnetic-ring": 10,
+        "titanium-alloy": 12
+      },
+      "out": {
+        "mini-fusion-power-plant": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "energy-exchanger",
+      "name": "Energy Exchanger",
+      "in": {
+        "particle-container": 8,
+        "processor": 40,
+        "steel": 40,
+        "titanium-alloy": 40
+      },
+      "out": {
+        "energy-exchanger": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "ray-receiver",
+      "name": "Ray Receiver",
+      "in": {
+        "high-purity-silicon": 20,
+        "photon-combiner": 10,
+        "processor": 5,
+        "steel": 20,
+        "super-magnetic-ring": 20
+      },
+      "out": {
+        "ray-receiver": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "artificial-star",
+      "name": "Artificial Star",
+      "in": {
+        "annihilation-constraint-sphere": 10,
+        "frame-material": 20,
+        "quantum-chip": 10,
+        "titanium-alloy": 20
+      },
+      "out": {
+        "artificial-star": 1
+      },
+      "row": 1
+    },
+    {
+      "id": "accumulator-discharge",
+      "name": "Accumulator (Discharge)",
+      "in": {
+        "accumulator-full": 1
+      },
+      "out": {
+        "accumulator": 1
+      },
+      "row": 0,
+      "icon": "accumulator",
+      "usage": -54000
+    },
+    {
+      "id": "accumulator-full",
+      "name": "Accumulator (full)",
+      "in": {
+        "accumulator": 1
+      },
+      "out": {
+        "accumulator-full": 1
+      },
+      "row": 0
+    },
+    {
+      "id": "conveyor-belt-1",
+      "name": "Conveyor Belt MK.I",
+      "in": {
+        "gear": 1,
+        "iron-ingot": 2
+      },
+      "out": {
+        "conveyor-belt-1": 3
+      },
+      "row": 2
+    },
+    {
+      "id": "conveyor-belt-2",
+      "name": "Conveyor Belt MK.II",
+      "in": {
+        "conveyor-belt-1": 3,
+        "electromagnetic-turbine": 1
+      },
+      "out": {
+        "conveyor-belt-2": 3
+      },
+      "row": 2
+    },
+    {
+      "id": "conveyor-belt-3",
+      "name": "Conveyor Belt MK.III",
+      "in": {
+        "conveyor-belt-2": 3,
+        "graphene": 1,
+        "super-magnetic-ring": 1
+      },
+      "out": {
+        "conveyor-belt-3": 3
+      },
+      "row": 2
+    },
+    {
+      "id": "splitter",
+      "name": "Splitter",
+      "in": {
+        "circuit-board": 1,
+        "gear": 2,
+        "iron-ingot": 3
+      },
+      "out": {
+        "splitter": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "automatic-piler",
+      "name": "Automatic Piler",
+      "in": {
+        "gear": 4,
+        "processor": 2,
+        "steel": 3,
+        "super-magnetic-ring": 1
+      },
+      "out": {
+        "automatic-piler": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "traffic-monitor",
+      "name": "Traffic Monitor",
+      "in": {
+        "circuit-board": 2,
+        "gear": 2,
+        "glass": 1,
+        "iron-ingot": 3
+      },
+      "out": {
+        "traffic-monitor": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "spray-coater",
+      "name": "Spray Coater",
+      "in": {
+        "circuit-board": 2,
+        "microcrystalline-component": 2,
+        "plasma-exciter": 2,
+        "steel": 4
+      },
+      "out": {
+        "spray-coater": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "storage-1",
+      "name": "Depot MK.I",
+      "in": {
+        "iron-ingot": 4,
+        "stone-brick": 4
+      },
+      "out": {
+        "storage-1": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "storage-2",
+      "name": "Depot MK.II",
+      "in": {
+        "steel": 8,
+        "stone-brick": 8
+      },
+      "out": {
+        "storage-2": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "storage-tank",
+      "name": "Storage Tank",
+      "in": {
+        "glass": 4,
+        "iron-ingot": 8,
+        "stone-brick": 4
+      },
+      "out": {
+        "storage-tank": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "logistics-distributor",
+      "name": "Logistics Distributor",
+      "in": {
+        "iron-ingot": 8,
+        "plasma-exciter": 4,
+        "processor": 4
+      },
+      "out": {
+        "logistics-distributor": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "planetary-logistics-station",
+      "name": "Planetary Logistics Station",
+      "in": {
+        "particle-container": 20,
+        "processor": 40,
+        "steel": 40,
+        "titanium-ingot": 40
+      },
+      "out": {
+        "planetary-logistics-station": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "interstellar-logistics-station",
+      "name": "Interstellar Logistics Station",
+      "in": {
+        "particle-container": 20,
+        "planetary-logistics-station": 1,
+        "titanium-alloy": 40
+      },
+      "out": {
+        "interstellar-logistics-station": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "orbital-collector",
+      "name": "Orbital Collector",
+      "in": {
+        "accumulator-full": 20,
+        "interstellar-logistics-station": 1,
+        "reinforced-thruster": 20,
+        "super-magnetic-ring": 50
+      },
+      "out": {
+        "orbital-collector": 1
+      },
+      "row": 2
+    },
+    {
+      "id": "sorter-1",
+      "name": "Sorter MK.I",
+      "in": {
+        "circuit-board": 1,
+        "iron-ingot": 1
+      },
+      "out": {
+        "sorter-1": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "sorter-2",
+      "name": "Sorter MK.II",
+      "in": {
+        "electric-motor": 1,
+        "sorter-1": 2
+      },
+      "out": {
+        "sorter-2": 2
+      },
+      "row": 3
+    },
+    {
+      "id": "sorter-3",
+      "name": "Sorter MK.III",
+      "in": {
+        "electromagnetic-turbine": 1,
+        "sorter-2": 2
+      },
+      "out": {
+        "sorter-3": 2
+      },
+      "row": 3
+    },
+    {
+      "id": "sorter-4",
+      "name": "Pile Sorter",
+      "in": {
+        "processor": 1,
+        "sorter-3": 2,
+        "super-magnetic-ring": 1
+      },
+      "out": {
+        "sorter-4": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "mining-machine",
+      "name": "Mining Machine",
+      "in": {
+        "circuit-board": 2,
+        "gear": 2,
+        "iron-ingot": 4,
+        "magnetic-coil": 2
+      },
+      "out": {
+        "mining-machine": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "advanced-mining-machine",
+      "name": "Advanced Mining Machine",
+      "in": {
+        "frame-material": 10,
+        "optical-grating-crystal": 40,
+        "quantum-chip": 4,
+        "super-magnetic-ring": 10,
+        "titanium-alloy": 20
+      },
+      "out": {
+        "advanced-mining-machine": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "water-pump",
+      "name": "Water Pump",
+      "in": {
+        "circuit-board": 2,
+        "electric-motor": 4,
+        "iron-ingot": 8,
+        "stone-brick": 4
+      },
+      "out": {
+        "water-pump": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "oil-extractor",
+      "name": "Oil Extractor",
+      "in": {
+        "circuit-board": 6,
+        "plasma-exciter": 4,
+        "steel": 12,
+        "stone-brick": 12
+      },
+      "out": {
+        "oil-extractor": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "oil-refinery",
+      "name": "Oil Refinery",
+      "in": {
+        "circuit-board": 6,
+        "plasma-exciter": 6,
+        "steel": 10,
+        "stone-brick": 10
+      },
+      "out": {
+        "oil-refinery": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "fractionator",
+      "name": "Fractionator",
+      "in": {
+        "glass": 4,
+        "processor": 1,
+        "steel": 8,
+        "stone-brick": 4
+      },
+      "out": {
+        "fractionator": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "chemical-plant",
+      "name": "Chemical Plant",
+      "in": {
+        "circuit-board": 2,
+        "glass": 8,
+        "steel": 8,
+        "stone-brick": 8
+      },
+      "out": {
+        "chemical-plant": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "quantum-chemical-plant",
+      "name": "Quantum Chemical Plant",
+      "in": {
+        "chemical-plant": 1,
+        "quantum-chip": 3,
+        "strange-matter": 3,
+        "titanium-glass": 10
+      },
+      "out": {
+        "quantum-chemical-plant": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "miniature-particle-collider",
+      "name": "Miniature Particle Collider",
+      "in": {
+        "frame-material": 20,
+        "graphene": 10,
+        "processor": 8,
+        "super-magnetic-ring": 25,
+        "titanium-alloy": 20
+      },
+      "out": {
+        "miniature-particle-collider": 1
+      },
+      "row": 3
+    },
+    {
+      "id": "arc-smelter",
+      "name": "Arc Smelter",
+      "in": {
+        "circuit-board": 4,
+        "iron-ingot": 4,
+        "magnetic-coil": 2,
+        "stone-brick": 2
+      },
+      "out": {
+        "arc-smelter": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "plane-smelter",
+      "name": "Plane Smelter",
+      "in": {
+        "arc-smelter": 1,
+        "frame-material": 5,
+        "plane-filter": 4,
+        "unipolar-magnet": 15
+      },
+      "out": {
+        "plane-smelter": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "df-negentropy-smelter",
+      "name": "Negentropy Smelter",
+      "in": {
+        "df-energy-shard": 30,
+        "df-negentropy-singularity": 10,
+        "plane-smelter": 1,
+        "quantum-chip": 4
+      },
+      "out": {
+        "df-negentropy-smelter": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "assembling-machine-1",
+      "name": "Assembling Machine Mk.I",
+      "in": {
+        "circuit-board": 4,
+        "gear": 8,
+        "iron-ingot": 4
+      },
+      "out": {
+        "assembling-machine-1": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "assembling-machine-2",
+      "name": "Assembling Machine Mk.II",
+      "in": {
+        "assembling-machine-1": 1,
+        "graphene": 8,
+        "processor": 4
+      },
+      "out": {
+        "assembling-machine-2": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "assembling-machine-3",
+      "name": "Assembling Machine Mk.III",
+      "in": {
+        "assembling-machine-2": 1,
+        "particle-broadband": 8,
+        "quantum-chip": 2
+      },
+      "out": {
+        "assembling-machine-3": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "df-recomposing-assembler",
+      "name": "Re-composing Assembler",
+      "in": {
+        "assembling-machine-3": 1,
+        "df-energy-shard": 30,
+        "df-matter-recombinator": 10,
+        "quantum-chip": 4
+      },
+      "out": {
+        "df-recomposing-assembler": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "matrix-lab",
+      "name": "Matrix Lab",
+      "in": {
+        "circuit-board": 4,
+        "glass": 4,
+        "iron-ingot": 8,
+        "magnetic-coil": 4
+      },
+      "out": {
+        "matrix-lab": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "df-self-evolution-lab",
+      "name": "Self-evolution Lab",
+      "in": {
+        "df-dark-fog-matrix": 20,
+        "df-silicon-based-neuron": 10,
+        "matrix-lab": 1,
+        "quantum-chip": 4
+      },
+      "out": {
+        "df-self-evolution-lab": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "em-rail-ejector",
+      "name": "EM-Rail Ejector",
+      "in": {
+        "gear": 20,
+        "processor": 5,
+        "steel": 20,
+        "super-magnetic-ring": 10
+      },
+      "out": {
+        "em-rail-ejector": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "vertical-launching-silo",
+      "name": "Vertical Launching Silo",
+      "in": {
+        "frame-material": 30,
+        "graviton-lens": 20,
+        "quantum-chip": 10,
+        "titanium-alloy": 80
+      },
+      "out": {
+        "vertical-launching-silo": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "df-gauss-turret",
+      "name": "Gauss Turret",
+      "in": {
+        "circuit-board": 2,
+        "gear": 8,
+        "iron-ingot": 8,
+        "magnetic-coil": 4
+      },
+      "out": {
+        "df-gauss-turret": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-missile-turret",
+      "name": "Missile Turret",
+      "in": {
+        "circuit-board": 12,
+        "df-engine": 6,
+        "electric-motor": 6,
+        "steel": 8
+      },
+      "out": {
+        "df-missile-turret": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-implosion-cannon",
+      "name": "Implosion Cannon",
+      "in": {
+        "circuit-board": 10,
+        "electric-motor": 8,
+        "steel": 10,
+        "super-magnetic-ring": 2
+      },
+      "out": {
+        "df-implosion-cannon": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-laser-turret",
+      "name": "Laser Turret",
+      "in": {
+        "circuit-board": 6,
+        "photon-combiner": 9,
+        "plasma-exciter": 6,
+        "steel": 9
+      },
+      "out": {
+        "df-laser-turret": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-plasma-turret",
+      "name": "Plasma Turret",
+      "in": {
+        "plasma-exciter": 5,
+        "processor": 5,
+        "super-magnetic-ring": 10,
+        "titanium-alloy": 20,
+        "titanium-glass": 10
+      },
+      "out": {
+        "df-plasma-turret": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-plasma-turret-sr",
+      "name": "SR Plasma Turret",
+      "in": {
+        "plasma-exciter": 5,
+        "processor": 5,
+        "steel": 15,
+        "super-magnetic-ring": 5
+      },
+      "out": {
+        "df-plasma-turret-sr": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-battlefield-analysis-base",
+      "name": "Battlefield Analysis Base",
+      "in": {
+        "circuit-board": 18,
+        "df-engine": 12,
+        "microcrystalline-component": 6,
+        "steel": 12
+      },
+      "out": {
+        "df-battlefield-analysis-base": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-jammer-tower",
+      "name": "Jammer Tower",
+      "in": {
+        "copper-ingot": 12,
+        "diamond": 6,
+        "plasma-exciter": 9,
+        "processor": 3
+      },
+      "out": {
+        "df-jammer-tower": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-signal-tower",
+      "name": "Signal Tower",
+      "in": {
+        "crystal-silicon": 6,
+        "steel": 12,
+        "wireless-power-tower": 2
+      },
+      "out": {
+        "df-signal-tower": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "df-planetary-shield-generator",
+      "name": "Planetary Shield Generator",
+      "in": {
+        "electromagnetic-turbine": 20,
+        "particle-container": 5,
+        "steel": 20,
+        "super-magnetic-ring": 5
+      },
+      "out": {
+        "df-planetary-shield-generator": 1
+      },
+      "row": 5
+    },
+    {
+      "id": "logistics-bot",
+      "name": "Logistics Bot",
+      "in": {
+        "df-engine": 1,
+        "iron-ingot": 2,
+        "processor": 1
+      },
+      "out": {
+        "logistics-bot": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "logistics-drone",
+      "name": "Logistics Drone",
+      "in": {
+        "iron-ingot": 5,
+        "processor": 2,
+        "thruster": 2
+      },
+      "out": {
+        "logistics-drone": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "logistics-vessel",
+      "name": "Interstellar Logistics Vessel",
+      "in": {
+        "processor": 10,
+        "reinforced-thruster": 2,
+        "titanium-alloy": 10
+      },
+      "out": {
+        "logistics-vessel": 1
+      },
+      "row": 4
+    },
+    {
+      "id": "df-prototype",
+      "name": "Prototype",
+      "in": {
+        "circuit-board": 2,
+        "df-engine": 1,
+        "iron-ingot": 3,
+        "plasma-exciter": 1
+      },
+      "out": {
+        "df-prototype": 1
+      },
+      "row": 7
+    },
+    {
+      "id": "df-precision-drone",
+      "name": "Precision Drone",
+      "in": {
+        "circuit-board": 2,
+        "df-prototype": 1,
+        "electromagnetic-turbine": 1,
+        "photon-combiner": 2
+      },
+      "out": {
+        "df-precision-drone": 1
+      },
+      "row": 7
+    },
+    {
+      "id": "df-attack-drone",
+      "name": "Attack Drone",
+      "in": {
+        "df-prototype": 1,
+        "electromagnetic-turbine": 1,
+        "particle-container": 1,
+        "processor": 1
+      },
+      "out": {
+        "df-attack-drone": 1
+      },
+      "row": 7
+    },
+    {
+      "id": "df-corvette",
+      "name": "Corvette",
+      "in": {
+        "particle-container": 3,
+        "processor": 2,
+        "reinforced-thruster": 1,
+        "titanium-alloy": 5
+      },
+      "out": {
+        "df-corvette": 1
+      },
+      "row": 7
+    },
+    {
+      "id": "df-destroyer",
+      "name": "Destroyer",
+      "in": {
+        "frame-material": 20,
+        "processor": 4,
+        "reinforced-thruster": 4,
+        "strange-matter": 1
+      },
+      "out": {
+        "df-destroyer": 1
+      },
+      "row": 7
+    },
+    {
+      "id": "foundation",
+      "name": "Foundation",
+      "in": {
+        "steel": 1,
+        "stone-brick": 3
+      },
+      "out": {
+        "foundation": 1
+      },
+      "row": 7
+    },
+    {
+      "id": "df-plasma-capsule",
+      "name": "Plasma Capsule",
+      "in": {
+        "deuterium": 10,
+        "graphene": 1,
+        "magnet": 2
+      },
+      "out": {
+        "df-plasma-capsule": 1
+      },
+      "row": 4
+    }
+  ]
+}
